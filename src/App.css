@@ -1,0 +1,126 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #eaeaea;  /* Light gray background */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  background-color: #ffffff;  /* White background */
+  border-radius: 15px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);  /* Soft shadow for card effect */
+}
+
+/* Title */
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/* Styling for Question and Result Containers */
+.question-container, .result-container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  margin: 20px auto;
+  text-align: left;
+}
+
+/* Styling for Questions */
+.question-container h2 {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Option Buttons Styling */
+.option-btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 12px 0;
+  font-size: 1.1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.option-btn:hover {
+  background-color: #0056b3; /* Darken button on hover */
+  transform: scale(1.05); /* Slight zoom effect for better interaction */
+}
+
+.option-btn:active {
+  transform: scale(0.98); /* Press effect */
+}
+
+/* Result Container */
+.result-container h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.result-container p {
+  font-size: 1.3rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Result Button for Retake Quiz */
+.result-btn {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.result-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.result-btn:active {
+  transform: scale(0.98); /* Press effect */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .App {
+    padding: 15px;
+  }
+
+  .question-container, .result-container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .option-btn {
+    font-size: 1rem;
+  }
+}
